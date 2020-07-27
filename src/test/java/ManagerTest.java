@@ -9,7 +9,7 @@ public class ManagerTest {
 
     @Before
     public void before() {
-        manager = new Manager("Keith", "NI1337", 24000.00, "Management");
+        manager = new Manager("Keith", "NI1337", 24000.0, "Management");
     }
 
     @Test
@@ -29,17 +29,17 @@ public class ManagerTest {
 
     @Test
     public void getSalary() {
-        assertEquals(24000.00, manager.getSalary(), 0.001);
+        assertEquals(24000.0, manager.getSalary(), 0.001);
     }
 
     @Test
     public void raiseSalary() {
         manager.raiseSalary(5000);
-        assertEquals(29000.00, manager.getSalary(), 0.001);
+        assertEquals(29000.0, manager.getSalary(), 0.001);
     }
 
     @Test
     public void payBonus() {
-        assertEquals(1000.00, manager.payBonus(), 0.001);
+        assertEquals(240.0, manager.payBonus(), 0.001);
     }
 }
